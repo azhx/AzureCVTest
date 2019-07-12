@@ -1,0 +1,16 @@
+.head{
+  width:20%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.upload{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.img{
+  display:block;
+  margin:auto;
+}

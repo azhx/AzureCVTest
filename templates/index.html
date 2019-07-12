@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+<head>
+<meta charset="utf-8">
+<title>Azure Test App</title>
+</head>
+<div class="head">
+  <h1>Azure Test App</h1>
+</div>
+<form class = 'upload' action='{{url_for('upload')}}' method='POST' enctype='multipart/form-data'>
+  <input class='one' type='text' name='link' value=''>
+  <br>
+  <div style='text-align:center;'>
+    <input type='submit' value='send' class ='btn btn-primary'>
+  </div>
+</form>
+
+<div class='img'>
+  <img src="{{url}}" alt="submit an image link">
+</div>
+<div class="text">
+  <p>"{{text}}"</p>
+</div>
+
+<!--
+<form class="upload" method="POST" action="/send">
+  <div class="form-group">
+    <input type="file" class="form-control-file" name="file">
+  </div>
+  <div style="text-align: center;">
+    <input type="submit" name="submit" value="submit" class='btn btn-primary'>
+  </div>
+</form>
+-->
+</html>

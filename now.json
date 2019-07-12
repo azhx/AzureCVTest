@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name" : "AzureTestapp",
+  "builds": [
+    {"src": "index.py", "use": "@now/python@canary"},
+    {"src": "templates/*.html", "use": "@now/static"},
+    { "src": "static/style.css", "use": "@now/static" }
+  ]
+}
